@@ -21,9 +21,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-app.use(express.static("public"));
+// Enable CORS so that browsers don't block requests.
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
+  next();
+});
+
+app.use(express.static("client/build"));
 
 require("./utils/api-routes.js")(app);
+
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({}).then(function() {
