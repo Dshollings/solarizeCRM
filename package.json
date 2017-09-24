@@ -1,0 +1,20 @@
+{
+  "name": "solarize",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bulma": "^0.5.3",
+    "express": "^4.14.0",
+    "jquery": "^3.2.1",
+    "mysql2": "^1.3.6",
+    "sequelize": "^4.3.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "proxy": "http://localhost:8080"
+}

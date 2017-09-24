@@ -1,0 +1,111 @@
+body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: #fff;
+    }
+
+  img {
+      color: ivory;
+  }
+
+  .is-dark {
+      background-color: #F62459;
+      background-image: linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg) no-repeat center center;
+  }
+
+  #main-title {
+      color: ivory;
+      text-shadow: 2px 2px 4px #000000;
+      font-weight: 400;
+      font-size: 80px;
+  }
+
+  #sub-title {
+      color: ivory;
+      text-shadow: 2px 2px 4px #000000;
+      font-weight: 400;
+      font-size: 25px;
+  }
+
+  .navbar {
+      padding: 20px 0;
+  }
+
+  .button.is-info.is-inverted.is-outlined {
+      margin-top: 10px;
+      background-color: transparent;
+  }
+
+  .header-image {
+      background-image: linear-gradient(rgba(25, 181, 254, 0.3), rgba(246, 36, 89, 0.2)), url(http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg);
+      background-size: cover;
+  }
+
+  .hero.is-dark .navbar-item a:not(.button),
+  .hero.is-dark a.navbar-item {
+      color: #fff;
+      padding: 0 30px;
+  }
+
+  p.title {
+      color: black;
+      font-weight: 400;
+  }
+  /*.hero-is-primary {
+color: yellow;
+}
+*/
+
+  .navbar-item {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: darkslategray;
+  }
+
+  .navbar-item .button {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      height: 45px;
+      border-radius: 5px;
+  }
+
+  .hero-body {
+      /* background-image: url("http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg")no-repeat center center;
+  background-size: cover;*/
+  }
+
+  .level {
+      background-color: none;
+      height: 60px;
+  }
+
+  .panel-block {
+      box-shadow: 4px 4px 2px gray;
+      border-radius: 6px;
+  }
+
+  .promo-img {
+      border-radius: 10px;
+      border: 10px solid #fff;
+  }
+
+  .footer {
+      background-color: none;
+      color: ivory;
+      font-size: 18px;
+      font-weight: 300;
+  }
+
+  .modal-card-head,
+  .modal-card-foot {
+      background-color: gray;
+  }
+
+  .modal-card-title {
+      font-size: 28px;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }

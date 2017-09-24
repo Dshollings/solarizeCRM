@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solarize Lead Management System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="../bulma.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <section class="hero is-primary is-large header-image">
+        <div class="hero-head">
+            <header class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <a class="nav-item" href="landing.html">
+              <img src="#" alt="Logo">
+            </a>
+                    </div>
+                    <span class="nav-toggle">
+            <span></span>
+                    <span></span>
+                    <!-- <span></span> -->
+                    </span>
+                    <div class="nav-right nav-menu">
+                        <a class="nav-item is-active">
+              Home
+            </a>
+                        <a class="nav-item is-active">
+              Stuff
+            </a>
+                        <a class="nav-item is-active">
+              Other Stuff
+            </a>
+                        <span class="dropdown is-active">
+              <div class="dropdown-trigger">
+              <a class="button is-info is-outlined is-inverted">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                        <span>User Login</span>
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-2" id="main-title">
+          Solarize
+        </h1>
+                <h2 class="subtitle is-5" id="sub-title">
+          A solar lead management system
+        </h2>
+                <br>
+                <br>
+                <p>
+                    <div class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title">Request Free Quote</p>
+                                <button class="delete" aria-label="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <fieldset>
+                                    <p>FIND OUT HOW MUCH YOU CAN SAVE</p>
+                                    <input type="hidden" name="oid" value="00D80000000dNiA">
+                                    <input type="hidden" name="retURL" value="#">
+                                    <!--ADJUST TO THE THANK YOU PAGE YOU WANT-->
+                                    <div>
+                                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="First Name" required="">
+                                    </div>
+                                    <div>
+                                        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Last Name" required="">
+                                    </div>
+                                    <div>
+                                        <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email Address" required="">
+                                    </div>
+                                    <div>
+                                        <input id="phone" maxlength="15" name="phone" size="20" type="tel" placeholder="Phone" required="">
+                                    </div>
+                                    <div>
+                                        <input name="street" size="20" placeholder="Street Address">
+                                    </div>
+                                    <div>
+                                        <div class="tier">
+                                            <input id="city" maxlength="40" name="city" size="20" type="text" placeholder="City">
+                                        </div>
+                                        <div>
+                                            <div class="tier">
+                                                <input id="state" maxlength="2" name="city" size="20" type="text" placeholder="State">
+                                            </div>
+                                        </div> 
+                                        <div class="tier">
+                                            <input id="zip" maxlength="5" name="zip" size="20" type="text" placeholder="Zip">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" id="sentmail_submit" name="sentmail[submit]">Submit Info&gt;&gt;</button>
+                                    </div>
+                            </section>
+                            <footer class="modal-card-foot">
+                                <button class="button is-success">Save changes</button>
+                                <button class="button is-danger" id="cancel">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <a class="button is-outlined" id="showModal">
+            <!-- <span class="icon">
+              <i class="fa fa-download"></i> 
+            </span> -->
+            <span>
+              Request Info
+            </span>
+          </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="hero-cta">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <p class="title">Click to get Started <a class="button is-primary"><span class="icon"><i class="fa fa-download"></i></span><span>Intent</span></a></p>
+            </div>
+        </nav>
+    </div>
+    <div class="section main">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="has-text-centered"><i class="fa fa-camera-retro icon-block"></i></p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
+                            <br>
+                            <p class="has-text-centered"><a class="button is-dark">More Info</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="has-text-centered"><i class="fa fa-bar-chart icon-block"></i></p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
+                            <br>
+                            <p class="has-text-centered"><a class="button is-dark">More Info</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="has-text-centered"><i class="fa fa-cloud icon-block"></i></p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
+                            <br>
+                            <p class="has-text-centered"><a class="button is-dark">More Info</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Solarize &copy 2017</strong>
+                </p>
+                <p>
+                    <a class="icon" href="#">
+            <i class="fa fa-github"></i>
+          </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../bulma.js"></script>
+</body>
+
+</html>
