@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import userArray from './js/userTable.js'
 import "./css/admin.css"
 
 // Create the Main component
