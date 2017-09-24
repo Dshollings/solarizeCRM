@@ -15,7 +15,7 @@
   "scripts": {
     "server": "node server/server.js",
     "client": "cd client && npm run start",
-    "start": "node server/server.js",
+    "start": "node server/server.js\"cd client && npm run start",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "proxy": "http://localhost:8080"
