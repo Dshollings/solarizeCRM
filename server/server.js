@@ -29,7 +29,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static("client/build"));
+app.use(express.static("client/public"));
 
 require("./utils/api-routes.js")(app);
 
