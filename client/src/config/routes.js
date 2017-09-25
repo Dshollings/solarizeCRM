@@ -1,27 +1,25 @@
 // Inclue the React library
 import React from "react";
 import { IndexRoute, browserHistory } from "react-router";
-import { HashRouter as Router, Route, Redirect, withRouter} from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect, withRouter} from "react-router-dom";
 // Reference the high-level components
 import UserView from "../components/Views/UserView";
 import AdminView from "../components/Views/AdminView";
 import Landing from "../components/Views/Landing";
 import Signup from "../components/Views/Signup";
 import Loginpage from "../components/Views/Loginpage";
-
-// Export the Routes
+  
+  // Export the Routes
 export default (
   // High level component is the Router component.
   <Router history={browserHistory}>
-    <Route path="/" component={Landing}>
-      <Route path="user" component={UserView} />
-      <Route path="admin" component={AdminView} />
-      <Route exact path="signup" component={Signup} />
-      <Route exact path="login" component={Loginpage} />
-      {/* If user selects any other path... we get the Home Route */}
-      <IndexRoute component={Landing} />
-
-    </Route>
+    <div>
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/user" component={UserView} />
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/login" component={Loginpage} />
+      <Route exact path="/admin" component={AdminView} />
+    </div>
   </Router>
 );
 
