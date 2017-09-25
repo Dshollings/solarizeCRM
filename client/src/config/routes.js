@@ -1,7 +1,7 @@
 // Inclue the React library
 import React from "react";
-import { IndexRoute, HashRouter } from "react-router";
-import { BrowserRouter as Router, Route, Redirect, withRouter} from "react-router-dom";
+import { IndexRoute, browserHistory } from "react-router";
+import { HashRouter as Router, Route, Redirect, withRouter} from "react-router-dom";
 // Reference the high-level components
 import UserView from "../components/Views/UserView";
 import AdminView from "../components/Views/AdminView";
