@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import "./css/landing.css"
 import "./css/bulma.css"
 import "jquery"
-import helpers from "./js/landingHelper.js"
+import helpers from "./js/helper.js"
 
 class Landing extends Component {
   render() {
@@ -91,7 +91,7 @@ class Landing extends Component {
                         </fieldset>
                       </section>
                     <footer className="modal-card-foot">
-                      <button className="button is-success" id="butSubmit" onClick={helpers.submitForm}>Save changes</button>
+                      <button className="button is-success" id="butSubmit" onClick={helpers.submitLeadForm}>Save changes</button>
                       <button className="button is-danger" id="cancel" onClick={helpers.closeModal}>Cancel</button>
                     </footer>
                   </div>

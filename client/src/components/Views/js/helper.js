@@ -11,7 +11,7 @@ const helpers = {
     console.log("Modal Closed");
   },
 
-  submitForm: function() {
+  submitLeadForm: function() {
     console.log("clicked");
 
     let newLead = {
@@ -36,6 +36,26 @@ const helpers = {
       });
   },
 
+  submitUserForm: function() {
+    console.log("clicked");
+
+    let newUser = {
+      user_name: $("#inputUsername").val().trim(),
+      user_password: $("#inputPassword").val().trim(),
+      salt: "456789",
+      company_name: $("#inputCompany").val().trim(),
+      email: $("#inputEmail").val().trim(),
+      phone: $("#inputPhone").val().trim(),
+      state: $("#inputState").val().trim(),
+    };
+    console.log(newUser);
+
+    $.post("/api/user", newUser)
+      .done(function(data) {
+        console.log(data);
+        console.log("--------------------Lead id: " + data.id);
+      });
+  },
 
 
 };
