@@ -15,6 +15,7 @@ export default (
   <Router history={browserHistory}>
     <div>
       <Route exact path="/" component={Landing} />
+      <Route exact path="/landing" component={Landing} />
       <Route exact path="/user" component={UserView} />
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/login" component={Loginpage} />
