@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import "./css/landing.css"
 import "./css/bulma.css"
 import "jquery"
-import "./js/landingHelper.js"
+import helpers from "./js/landingHelper.js"
 
 class Landing extends Component {
   render() {
@@ -53,7 +53,7 @@ class Landing extends Component {
                   <div className="modal-card">
                     <header className="modal-card-head">
                       <p className="modal-card-title">Request Free Quote</p>
-                      <button className="delete" aria-label="close"></button>
+                      <button className="delete" aria-label="close" onClick={helpers.closeModal}></button>
                     </header>
                       <section className="modal-card-body">
                         <fieldset>
@@ -88,18 +88,15 @@ class Landing extends Component {
                               <input id="zip" maxLength="5" name="zip" size="20" type="text" placeholder="Zip"></input>
                             </div>
                           </div>
-                          <div>
-                            <button type="submit" id="sentmail_submit" name="sentmail[submit]">Submit Info&gt;&gt;</button>
-                          </div>
                         </fieldset>
                       </section>
                     <footer className="modal-card-foot">
-                      <button className="button is-success" id="butSubmit">Save changes</button>
-                      <button className="button is-danger" id="cancel">Cancel</button>
+                      <button className="button is-success" id="butSubmit" onClick={helpers.submitForm}>Save changes</button>
+                      <button className="button is-danger" id="cancel" onClick={helpers.closeModal}>Cancel</button>
                     </footer>
                   </div>
                 </div>
-                <a className="button is-outlined" id="showModal">
+                <a className="button is-outlined" id="showModal" onClick={helpers.openModal}>
                   <span className="icon">
                     <i className="fa fa-download"></i> 
                   </span>
