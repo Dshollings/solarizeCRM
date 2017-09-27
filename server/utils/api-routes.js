@@ -25,7 +25,7 @@ module.exports = function(app) {
        return res.redirect('http://localhost:3000/user/affiliate?id=' + userid);
      });
     })(req, res, next);
-    });
+  });
 
 
   app.get("/api/user", function(req, res) {
