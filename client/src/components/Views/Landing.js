@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import "./css/bulma.css"
 import "./css/landing.css"
-import "jquery"
+import "jquery" 
 import helpers from "./js/helper.js"
 
 class Landing extends Component {
