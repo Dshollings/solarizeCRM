@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 
 // Grabs the Routes
 import routes from "./config/routes";
-// import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
 // Renders the contents according to the route page
 // Displays the contents in the div app of index.html
 // Note how ReactDOM takes in two parameters (the contents and the location)
 ReactDOM.render(routes, document.getElementById("root"));
-// registerServiceWorker();
+registerServiceWorker();
