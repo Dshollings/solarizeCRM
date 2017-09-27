@@ -54,13 +54,13 @@ app.use((req, res, next) => {
 
 require("./utils/api-routes.js")(app);
 
-// app.get("*", function(req, res) {
-//   if ( process.env.NODE_ENV === 'production' ) {
-//     res.sendFile(__dirname + "./client/build/index.html");
-//   } else {
-//     res.sendFile(__dirname + "./client/public/index.html");
-//   }
-// });
+app.get("*", function(req, res) {
+  if ( process.env.NODE_ENV === 'production' ) {
+     app.use(express.static("client/build"));
+  } else {
+     app.use(express.static("client/public"));
+  }
+});
 
 
 
