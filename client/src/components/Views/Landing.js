@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import "./css/landing.css"
 import "./css/bulma.css"
+import "./css/landing.css"
 import "jquery"
 import helpers from "./js/helper.js"
 
@@ -50,6 +50,7 @@ class Landing extends Component {
         </div>
         <div className="hero-body">
           <div className="container has-text-centered">
+            <img src="/favicon.png" alt="Logo" height="120" width="120" />
             <h1 className="title is-2" id="main-title">Solarize</h1>
             <h2 className="subtitle is-5" id="sub-title">A solar lead management system</h2>
             <br></br>
@@ -113,46 +114,42 @@ class Landing extends Component {
             </div>
           </div>
         </section>
-        <div className="hero-cta">
-          <nav className="level">
-            <div className="level-item has-text-centered">
-              <p className="title">Click to get Started <a className="button is-primary"><span className="icon"><i className="fa fa-download"></i></span><span>Intent</span></a></p>
-            </div>
-          </nav>
-        </div>
         <div className="section main">
           <div className="container">
             <div className="columns">
               <div className="column is-4">
                 <div className="panel">
                   <div className="panel-block section">
-                    <p className="has-text-centered"><i className="fa fa-camera-retro icon-block"></i></p>
-                    <br></br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
-                    <br></br>
-                    <p className="has-text-centered"><a className="button is-dark">More Info</a></p>
+                    <h3 className="has-text-centered"><i className="fa fa-money icon-block"></i></h3>
+                    <br />
+                    <h3 className="infotitle">Reduce your electric bill</h3>
+                    <br />
+                    <p className="pbody">Whether you’re a homeowner, business, or nonprofit, electricity costs can make up a large portion of your monthly expenses. With a solar panel system, you’ll generate free power for your system’s entire 25+ year lifecycle. Solar panels will reduce your utility bills and you’ll still save a lot of money.</p>
+                    <p className="has-text-centered"><a target="_blank" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
               <div className="column is-4">
                 <div className="panel">
                   <div className="panel-block section">
-                    <p className="has-text-centered"><i className="fa fa-bar-chart icon-block"></i></p>
-                    <br></br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
-                    <br></br>
-                    <p className="has-text-centered"><a className="button is-dark">More Info</a></p>
+                    <p className="has-text-centered"><i className="fa fa-globe icon-block"></i></p>
+                    <br />
+                    <h3 className="infotitle">Help save the environment</h3>
+                    <br />
+                    <p className="pbody">Solar is a great way to reduce your carbon footprint. Buildings are responsible for 38 percent of all carbon emissions in the U.S., and going solar can significantly decrease that number. A typical residential solar panel system will eliminate three to four tons of carbon emissions each year—the equivalent of planting over 100 trees annually.</p>
+                    <p className="has-text-centered"><a target="_blank" href="https://www.energysage.com/solar/why-go-solar/protect-the-environment/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
               <div className="column is-4">
                 <div className="panel">
                   <div className="panel-block section">
-                    <p className="has-text-centered"><i className="fa fa-cloud icon-block"></i></p>
-                    <br></br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
-                    <br></br>
-                    <p className="has-text-centered"><a className="button is-dark">More Info</a></p>
+                    <h3 className="has-text-centered"><i className="fa fa-line-chart icon-block"></i></h3>
+                    <br />
+                    <h3 className="infotitle">Protect against rising energy costs</h3>
+                    <br />
+                    <p className="pbody">One of the most clear cut benefits of solar panels is the ability to hedge utility prices. In the past ten years, residential electricity prices have gone up by an average of three percent annually. By investing in a solar energy system now, you can fix your electricity rate and protect against unpredictable increases in electricity costs.</p>
+                    <p className="has-text-centered"><a target="_blank" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/https://www.energysage.com/solar/why-go-solar/reduce-energy-costs/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
