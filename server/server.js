@@ -54,13 +54,7 @@ app.use((req, res, next) => {
 
 require("./utils/api-routes.js")(app);
 
-app.get("*", function(req, res) {
-  if ( process.env.NODE_ENV === 'production' ) {
-    res.sendFile(__dirname + "/client/build/index.html");
-  } else {
-    res.sendFile(__dirname + "/client/public/index.html");
-  }
-});
+
 
 
 // Syncing our sequelize models and then starting our express app
