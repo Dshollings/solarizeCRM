@@ -10,7 +10,7 @@ class AdminView extends Component {
   render() {
 
     return (
-      <div>
+      <div> 
          <div className="columns">
           <aside className="column is-2 aside hero is-fullheight is-hidden-mobile">
             <div>

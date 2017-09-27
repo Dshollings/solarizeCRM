@@ -14,11 +14,6 @@ class Landing extends Component {
         <div className="hero-head">
           <header className="nav">
             <div className="container">
-              <div className="nav-left">
-                <a className="nav-item" href="/..landing.html">
-                 <img src="/favicon.png" alt="Solarize logo"/>
-                </a>
-              </div>
               <span className="nav-toggle">
                 <span></span>
                 <span></span>
@@ -27,9 +22,6 @@ class Landing extends Component {
                 <span className="dropdown is-active">
                   <div className="dropdown-trigger">
                     <a className="button is-info is-outlined is-inverted" href="/signup">
-                      <span className="icon">
-                        <i className="fa fa-github"></i>
-                      </span>
                       <span>Become an Affiliate</span>
                     </a>
                   </div>
@@ -37,9 +29,6 @@ class Landing extends Component {
                 <span className="dropdown is-active">
                   <div className="dropdown-trigger">
                     <a className="button is-info is-outlined is-inverted" href="/login">
-                      <span className="icon">
-                        <i className="fa fa-github"></i>
-                      </span>
                       <span>User Login</span>
                     </a>
                   </div>
