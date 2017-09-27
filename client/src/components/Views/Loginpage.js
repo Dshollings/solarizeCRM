@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import "./css/landing.css"
 import "jquery"
+import helpers from "./js/helper.js"
 
 class Loginpage extends Component {
   render() {
@@ -28,7 +29,7 @@ class Loginpage extends Component {
             <section className="hero is-fullheight">
               <div className="hero-heading">
                 <div className="section has-text-centered">
-                  <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" width="150px" />
+                  <img src="/favicon.png" alt="Solarize logo" width="150px" />
                 </div>
               </div>
               <div className="hero-body">
@@ -39,23 +40,22 @@ class Loginpage extends Component {
                         <img src="../icon.png" alt= "solarize icon" width="128px" />
                       </h1>
                       <div className="login-form">
-
-                          <form method="POST" action="http://localhost:8080/login" className="form-signin">
-                        <p className="control has-icon has-icon-right">
-                          <input className="input username-input" type="text" placeholder="Username" name="username" />
-                          <span className="icon user">
-                            <i className="fa fa-user"></i>
-                          </span>
-                        </p>
-                        <p className="control has-icon has-icon-right">
-                          <input className="input password-input" type="password" placeholder="●●●●●●●" name="password" />
-                          <span className="icon user">
-                            <i className="fa fa-lock"></i>
-                          </span>
-                        </p>
-                        <p className="control login">
-                          <button className="button is-success is-outlined is-large is-fullwidth" type="submit">Login</button>
-                        </p>
+                        <form method="POST" action="http://localhost:8080/login" className="form-signin">
+                          <p className="control has-icon has-icon-right">
+                            <input className="input username-input" type="text" placeholder="Username" name="username" />
+                            <span className="icon user">
+                              <i className="fa fa-user"></i>
+                            </span>
+                          </p>
+                          <p className="control has-icon has-icon-right">
+                            <input className="input password-input" type="password" placeholder="●●●●●●●" name="password" />
+                            <span className="icon user">
+                              <i className="fa fa-lock"></i>
+                            </span>
+                          </p>
+                          <p className="control login">
+                            <button className="button is-success is-outlined is-large is-fullwidth" type="submit">Login</button>
+                          </p>
                         </form>
 
                       </div>

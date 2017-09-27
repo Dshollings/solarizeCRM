@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import "./css/bulma.css"
+import "./css/admin.css"
+import helpers from "./js/helper.js"
+
 // import leadArray from './js/leadTable.js'
 
 // Create the Main component
@@ -12,6 +16,7 @@ class UserView extends Component {
           <aside className="column is-2 aside hero is-fullheight is-hidden-mobile">
             <div>
               <div className="main">
+                <img src="/favicon.png" alt="Solarize logo" width="150px" />
                 <div className="title">Main</div>
                 <Link to="" className="item active"><span className="icon"><i className="fa fa-home"></i></span><span className="name">Dashboard</span></Link>
                 <Link to="" className="item"><span className="icon"><i className="fa fa-map-marker"></i></span><span className="name">Activity</span></Link>

@@ -16,7 +16,7 @@ class Landing extends Component {
             <div className="container">
               <div className="nav-left">
                 <a className="nav-item" href="/..landing.html">
-                  <img className="logo" src="./images/solarize-icon-white.png" alt="Logo"></img>
+                 <img src="/favicon.png" alt="Solarize logo"/>
                 </a>
               </div>
               <span className="nav-toggle">
@@ -24,12 +24,19 @@ class Landing extends Component {
                 <span></span>
               </span>
               <div className="nav-right nav-menu">
-                <a className="nav-item is-active">Home</a>
-                <a className="nav-item is-active">Stuff</a>
-                <a className="nav-item is-active">Other Stuff</a>
                 <span className="dropdown is-active">
                   <div className="dropdown-trigger">
                     <a className="button is-info is-outlined is-inverted" href="/signup">
+                      <span className="icon">
+                        <i className="fa fa-github"></i>
+                      </span>
+                      <span>Become an Affiliate</span>
+                    </a>
+                  </div>
+                </span>
+                <span className="dropdown is-active">
+                  <div className="dropdown-trigger">
+                    <a className="button is-info is-outlined is-inverted" href="/login">
                       <span className="icon">
                         <i className="fa fa-github"></i>
                       </span>

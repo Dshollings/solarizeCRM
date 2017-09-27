@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import "./css/bulma.css"
 import "./css/admin.css"
+import helpers from "./js/helper.js"
 
 // Create the Main component
 class AdminView extends Component {
@@ -13,6 +15,7 @@ class AdminView extends Component {
           <aside className="column is-2 aside hero is-fullheight is-hidden-mobile">
             <div>
               <div className="main">
+                <img src="/favicon.png" alt="Solarize logo" width="150px" />
                 <div className="title">Main</div>
                   <a href="" className="item active"><span className="icon"><i className="fa fa-home"></i></span><span className="name">Dashboard</span></a>
                   <a href="" className="item"><span className="icon"><i className="fa fa-map-marker"></i></span><span className="name">Activity</span></a>
