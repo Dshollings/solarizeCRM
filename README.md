@@ -1,1 +1,1 @@
-# solarizeCRM
+# solarizeCMS
