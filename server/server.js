@@ -35,7 +35,14 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 setupPassport(app);
-app.use(express.static("./client/public"));
+// app.use(express.static("./client/public"));
+// app.get("*", function(req, res) {
+  if ( process.env.NODE_ENV === 'production' ) {
+    app.use(express.static("./client/build"));
+  } else {
+    app.use(express.static("./client/public"));
+  }
+// });
 
 // Enable CORS so that browsers don't block requests.
 app.use((req, res, next) => {
@@ -45,7 +52,13 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static("client/public"));
+app.get("*", function(req, res) {
+  if ( process.env.NODE_ENV === 'production' ) {
+    res.sendFile(__dirname + "/client/build/index.html");
+  } else {
+    res.sendFile(__dirname + "/client/public/index.html");
+  }
+});
 
 require("./utils/api-routes.js")(app);
 
