@@ -41,7 +41,7 @@ module.exports.signup = function(req, res) {
   
   Model.User.create(newUser)
   .then(function() {
-    res.redirect('localhost:3000/')
+    res.redirect('/')
   }).catch(function(error) {
     console.log('error', "Please, choose a different username.")
     res.redirect('/signup')
