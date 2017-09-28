@@ -17,7 +17,7 @@
     "passport-local": "^1.0.0",
     "sequelize": "^4.3.1"
   },
-   "devDependencies": {
+  "devDependencies": {
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
   },
