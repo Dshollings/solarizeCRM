@@ -39,8 +39,9 @@ class Loginpage extends Component {
                       <h1 className="avatar has-text-centered section">
                         <img src="../icon.png" alt= "solarize icon" width="128px" />
                       </h1>
+                      
                       <div className="login-form">
-                        <form method="POST" action="http://localhost:8080/login" className="form-signin">
+                        <form method="POST" action="/login" className="form-signin">
                           <p className="control has-icon has-icon-right">
                             <input className="input username-input" type="text" placeholder="Username" name="username" />
                             <span className="icon user">
