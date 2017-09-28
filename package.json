@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "server/server.js",
+  "engines": {
+    "node":"8.1.1"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.15.2",
