@@ -33,19 +33,19 @@ class AddUser extends Component {
             </a>
           </li>
           <li>
-            <a href="./user">
+            <a href="/user">
               <i className="material-icons">person</i>
               <p>User Profile</p>
             </a>
           </li>
           <li>
-            <a href="./table">
+            <a href="/table">
               <i className="material-icons">content_paste</i>
               <p>Table List</p>
             </a>
           </li>
           <li>
-            <a href="./maps">
+            <a href="/maps">
               <i className="material-icons">location_on</i>
               <p>Maps</p>
             </a>

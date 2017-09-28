@@ -1,4 +1,5 @@
 import $ from "jquery"
+import axios from "axios";
 
 const helpers = {
   openModal: function() {
@@ -12,7 +13,7 @@ const helpers = {
   },
 
   populateLeadTable1: function() {
-    $.ajax({ url: "/api/leads", method: "GET" })
+    $.ajax({ url: "/api/lead", method: "GET" })
         .done(function(userData) {
             console.log(userData);
             var userArray = userData;
@@ -38,7 +39,7 @@ const helpers = {
       $("#submitstate").click(function() {
         $('#table2 tbody').remove();
 
-        $.ajax({ url: "/api/leads", method: "GET" })
+        $.ajax({ url: "/api/lead", method: "GET" })
             .done(function(userData) {
                 console.log(userData);
                 var userArray = userData;
@@ -66,7 +67,7 @@ const helpers = {
 
   populateUserTable: function() {
 
-    $.ajax({ url: "/api/User", method: "GET" })
+    $.ajax({ url: "/api/user", method: "GET" })
     .done(function(userData) {
         console.log(userData);
         var userArray = userData;
@@ -92,7 +93,7 @@ const helpers = {
   populateTable2: function() {
     $("#submitstate").click(function() {
       $('#table2').find("tr:gt(0)").remove();
-      $.ajax({ url: "/api/leads", method: "GET" })
+      $.ajax({ url: "/api/lead", method: "GET" })
         .done(function(userData) {
           console.log(userData);
           var userArray = userData;
