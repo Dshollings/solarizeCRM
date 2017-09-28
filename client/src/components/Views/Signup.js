@@ -66,7 +66,7 @@ class Signup extends Component {
                           <label for="inputCompany" class="sr-only">Company Name</label>
                           <input type="text" id="inputCompany" name="company_name" class="form-control" placeholder="Company Name" required />
                           <br />
-                          <button class="btn btn-lg btn-primary btn-block" type="submit" onClick={helpers.submitUserForm}>Sign up</button>
+                          <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign up</button>
                         </form>
                       </div>
                       <div className="section forgot-password">

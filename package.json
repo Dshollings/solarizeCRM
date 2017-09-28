@@ -32,7 +32,7 @@
     "build": "cd client && npm start",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "postinstall": "cd client && npm install && npm run build"
   },
   "proxy": "http://localhost:8080"
 }
