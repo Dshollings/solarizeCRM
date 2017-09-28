@@ -40,6 +40,11 @@ export default function register() {
         checkValidServiceWorker(swUrl);
       }
     });
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
   }
 }
 
