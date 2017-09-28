@@ -7,8 +7,12 @@ import UserView from "../components/Views/UserView";
 import AdminView from "../components/Views/AdminView";
 import Landing from "../components/Views/Landing";
 import Signup from "../components/Views/Signup";
+import AddUser from "../components/Views/User.js";
+import TableView from "../components/Views/table.js";
 import Loginpage from "../components/Views/Loginpage";
   
+
+
   // Export the Routes
 export default (
   // High level component is the Router component.
@@ -16,7 +20,9 @@ export default (
     <div>
       <Route exact path="/" component={Landing} />
       <Route exact path="/landing" component={Landing} />
-      <Route exact path="/user" component={UserView} />
+      <Route exact path="/userview" component={UserView} />
+      <Route exact path="/user" component={AddUser} />
+      <Route exact path="/table" component={TableView} />
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/login" component={Loginpage} />
       <Route exact path="/admin" component={AdminView} />

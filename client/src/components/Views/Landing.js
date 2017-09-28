@@ -16,10 +16,10 @@ class Landing extends Component {
             <div className="container">
               <span className="nav-toggle">
                 <div className="nav-left">
- -                <a className="nav-item" href="/landing.html">
- -                 <img src="/favicon.png" alt="Solarize logo"/>
- -                </a>
- -              </div>
+                <a className="nav-item" href="/landing.html">
+                 <img src="/favicon.png" alt="Solarize logo"/>
+                </a>
+              </div>
                 <span></span>
                 <span></span>
               </span>
