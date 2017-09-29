@@ -3,7 +3,7 @@ import axios from "axios";
 
 const helpers = {
   openModal: function() {
-    $(".modal").addClass("is-active");
+    $("#modal1").addClass("is-active");
     console.log("Modal Open");
   },
 
@@ -226,18 +226,17 @@ const helpers = {
 
   submitLeadForm: function() {
     console.log("clicked");
-
+    $("#modal2").removeClass("is-active");
     let newLead = {
       first_name: $("#first_name").val().trim(),
       last_name: $("#last_name").val().trim(),
       email: $("#email").val().trim(),
       phone: $("#phone").val().trim(),
-      state: $("#state").val().trim(),
       contacted: false,
       converted: false,
       address: $("#streetAddress").val().trim(),
       city: $("#city").val().trim(),
-      state: $("#state").val().trim(),
+      state: $("#statelist").val(),
       zip: $("#zip").val().trim()
     };
     console.log(newLead);
@@ -247,6 +246,9 @@ const helpers = {
         console.log(data);
         console.log("--------------------Lead id: " + data.id);
       });
+    $("#modal1").removeClass("is-active");
+      $("#modal2").addClass("is-active");
+      // $("#fieldinfo").append("Thank You " + newLead.first_name + "!" + "<br /> A Representative will be contacting you shortly");
   },
 
   submitUserForm: function() {
