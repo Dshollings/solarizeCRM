@@ -9,7 +9,7 @@ img {
 
 .is-dark {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg) no-repeat center center;
+  background-image: url(http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg) no-repeat center center;
 }
 
 #main-title {
@@ -47,9 +47,14 @@ img {
 .dropdown-trigger {
   text-align: center;
 }
+#statelist, #submitstate {
+  color: grey;
+  width: 174px;
+  height: 20px;
+}
 
 .header-image {
-  background-image: linear-gradient(rgba(25, 181, 254, 0.3), rgba(246, 36, 89, 0.2)), url(http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg);
+  background-image: url(http://cdn.wallpapersafari.com/95/7/rpt0IV.jpg);
   background-size: cover;
 }
 
@@ -121,6 +126,7 @@ p.title {
 
 .icon-block {
   font-size: 4em;
+  color: grey;
 }
 
 .promo-img {
@@ -133,15 +139,26 @@ p.title {
   color: ivory;
   font-size: 18px;
   font-weight: 300;
+  height: 200px;
+}
+
+.has-text-centered {
+  width: 100%;
+  background-color: transparent;
+
+  
 }
 
 .modal-card-head,
 .modal-card-foot {
-  background-color: gray;
+  background-color: lightgray;
 }
 
 .modal-card-title {
   font-size: 28px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+body, button, input, select, textarea {
+  color: black;
 }

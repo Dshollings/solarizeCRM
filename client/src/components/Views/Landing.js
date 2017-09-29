@@ -46,7 +46,7 @@ class Landing extends Component {
           <div className="container has-text-centered">
             <img src="/favicon.png" alt="Logo" height="120" width="120" />
             <h1 className="title is-2" id="main-title">Solarize</h1>
-            <h2 className="subtitle is-5" id="sub-title">A solar lead management system</h2>
+            <h2 className="subtitle is-5" id="sub-title">Join the Solar Revolution Today</h2>
             <br></br>
             <br></br>
             <div>
