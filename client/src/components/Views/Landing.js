@@ -26,14 +26,14 @@ class Landing extends Component {
               <div className="nav-right nav-menu">
                 <span className="dropdown is-active">
                   <div className="dropdown-trigger">
-                    <a className="button is-info is-outlined is-inverted" href="/signup">
+                    <a className="button is-light is-outlined" href="/signup">
                       <span>Become an Affiliate</span>
                     </a>
                   </div>
                 </span>
                 <span className="dropdown is-active">
                   <div className="dropdown-trigger">
-                    <a className="button is-info is-outlined is-inverted" href="/login">
+                    <a className="button is-light is-outlined" href="/login">
                       <span>User Login</span>
                     </a>
                   </div>

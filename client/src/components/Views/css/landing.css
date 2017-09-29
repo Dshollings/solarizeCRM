@@ -30,7 +30,7 @@ img {
   padding: 20px 0;
 }
 
-.button.is-info.is-inverted.is-outlined {
+.button.is-light.is-outlined {
   margin-top: 10px;
   background-color: transparent;
 }
