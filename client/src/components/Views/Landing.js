@@ -150,7 +150,7 @@ class Landing extends Component {
                   </footer>
                 </div>
               </div>
-              <a className="button is-outlined" id="showModal" href="https://afternoon-eyrie-66951.herokuapp.com/leadinfo.html">
+              <a className="button is-outlined" id="showModal" href="https://solarizeinfo.herokuapp.com/leadinfo">
                 <span className="icon">
                   <i className="fa fa-download"></i> 
                 </span>
