@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import "./css/landing.css"
 import "jquery"
-import helpers from "./js/helper.js"
+// import helpers from "./js/helper.js"
 
 class Loginpage extends Component {
   render() {

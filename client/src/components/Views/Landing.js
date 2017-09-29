@@ -57,32 +57,32 @@ class Landing extends Component {
                       <p className="modal-card-title">Request Free Quote</p>
                       <button className="delete" aria-label="close" onClick={helpers.closeModal}></button>
                     </header>
-                      <section class="modal-card-body">
+                      <section className="modal-card-body">
                     <fieldset>
                         <p>FIND OUT HOW MUCH YOU CAN SAVE</p>
                         <input type="hidden" name="oid" value="00D80000000dNiA" />
                         <input type="hidden" name="retURL" value="#" />
                         <div>
-                          <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="First Name" required="" />
+                          <input id="first_name" maxLength="40" name="first_name" size="20" type="text" placeholder="First Name" required="" />
                         </div>
                         <div>
-                          <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Last Name" required="" />
+                          <input id="last_name" maxLength="80" name="last_name" size="20" type="text" placeholder="Last Name" required="" />
                         </div>
                         <div>
-                          <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email Address" required="" />
+                          <input id="email" maxLength="80" name="email" size="20" type="email" placeholder="Email Address" required="" />
                         </div>
                         <div>
-                          <input id="phone" maxlength="15" name="phone" size="20" type="tel" placeholder="Phone" required="" />
+                          <input id="phone" maxLength="15" name="phone" size="20" type="tel" placeholder="Phone" required="" />
                         </div>
                         <div>
                           <input id="streetAddress" name="street" size="20" placeholder="Street Address" />
                         </div>
                         <div>
-                          <div class="tier">
-                            <input id="city" maxlength="40" name="city" size="20" type="text" placeholder="City" />
+                          <div className="tier">
+                            <input id="city" maxLength="40" name="city" size="20" type="text" placeholder="City" />
                           </div>
                           <div>
-                            <div class="tier">
+                            <div className="tier">
                               <select id="statelist" name="state_full_name">
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -138,8 +138,8 @@ class Landing extends Component {
                               </select>
                             </div>
                           </div>
-                          <div class="tier">
-                            <input id="zip" maxlength="5" name="zip" size="20" type="text" placeholder="Zip" />
+                          <div className="tier">
+                            <input id="zip" maxLength="5" name="zip" size="20" type="text" placeholder="Zip" />
                           </div>
                         </div>
                       </fieldset>
@@ -184,7 +184,7 @@ class Landing extends Component {
                     <h3 className="infotitle">Reduce your electric bill</h3>
                     <br />
                     <p className="pbody">Whether you’re a homeowner, business, or nonprofit, electricity costs can make up a large portion of your monthly expenses. With a solar panel system, you’ll generate free power for your system’s entire 25+ year lifecycle. Solar panels will reduce your utility bills and you’ll still save a lot of money.</p>
-                    <p className="has-text-centered"><a target="_blank" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/" className="button is-dark">More Info</a></p>
+                    <p className="has-text-centered"><a target="_blank" rel="noopener noreferrer" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
@@ -196,7 +196,7 @@ class Landing extends Component {
                     <h3 className="infotitle">Help save the environment</h3>
                     <br />
                     <p className="pbody">Solar is a great way to reduce your carbon footprint. Buildings are responsible for 38 percent of all carbon emissions in the U.S., and going solar can significantly decrease that number. A typical residential solar panel system will eliminate three to four tons of carbon emissions each year—the equivalent of planting over 100 trees annually.</p>
-                    <p className="has-text-centered"><a target="_blank" href="https://www.energysage.com/solar/why-go-solar/protect-the-environment/" className="button is-dark">More Info</a></p>
+                    <p className="has-text-centered"><a target="_blank" rel="noopener noreferrer" href="https://www.energysage.com/solar/why-go-solar/protect-the-environment/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
@@ -208,7 +208,7 @@ class Landing extends Component {
                     <h3 className="infotitle">Protect against rising energy costs</h3>
                     <br />
                     <p className="pbody">One of the most clear cut benefits of solar panels is the ability to hedge utility prices. In the past ten years, residential electricity prices have gone up by an average of three percent annually. By investing in a solar energy system now, you can fix your electricity rate and protect against unpredictable increases in electricity costs.</p>
-                    <p className="has-text-centered"><a target="_blank" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/https://www.energysage.com/solar/why-go-solar/reduce-energy-costs/" className="button is-dark">More Info</a></p>
+                    <p className="has-text-centered"><a target="_blank" rel="noopener noreferrer" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/https://www.energysage.com/solar/why-go-solar/reduce-energy-costs/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
