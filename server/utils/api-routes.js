@@ -22,7 +22,7 @@ module.exports = function(app) {
        if (!user) { return res.redirect('/'); }
       req.logIn(user, function(err) {
         if (err) { return next(err); }
-       return res.redirect('http://localhost:3000/user/affiliate?id=' + userid);
+       return res.redirect('https://solarizeinfo.herokuapp.com/dashboard.html' + userid);
      });
     })(req, res, next);
   });

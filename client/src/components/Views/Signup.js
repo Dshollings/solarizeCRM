@@ -43,7 +43,7 @@ class Signup extends Component {
                         <img src="../icon.png" alt= "solarize icon" width="128px" />
                       </h1>
                       <div className="login-form">
-                        <form method="POST" action="http://localhost:8080/signup" class="form-signin">
+                        <form method="POST" action="/signup" class="form-signin">
                           <h2 class="form-signin-heading">Create an account</h2>
                           <label for="inputUsername" class="sr-only">Username</label>
                           <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required autofocus />
