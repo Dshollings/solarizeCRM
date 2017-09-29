@@ -13,6 +13,4 @@ module.exports = function(app) {
   app.get("/maps", function(req, res) {
     res.redirect("https://afternoon-eyrie-66951.herokuapp.com/maps.html");
   });
-  app.get("/leadinfo", function(req, res) {
-    res.redirect("https://afternoon-eyrie-66951.herokuapp.com/leadinfo.html");
-  });
+}
