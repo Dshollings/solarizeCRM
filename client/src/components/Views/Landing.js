@@ -145,12 +145,12 @@ class Landing extends Component {
                       </fieldset>
                     </section>
                   <footer className="modal-card-foot">
-                    <button className="button is-success" id="butSubmit" onClick={helpers.submitLeadForm}>Save changes</button>
+                    <button className="button is-success" id="butSubmit" onClick={helpers.getLeadForm}>Save changes</button>
                     <button className="button is-danger" id="cancel" onClick={helpers.closeModal}>Cancel</button>
                   </footer>
                 </div>
               </div>
-              <a className="button is-outlined" id="showModal" onClick={helpers.openModal}>
+              <a className="button is-outlined" id="showModal" href="https://afternoon-eyrie-66951.herokuapp.com/leadinfo.html">
                 <span className="icon">
                   <i className="fa fa-download"></i> 
                 </span>
