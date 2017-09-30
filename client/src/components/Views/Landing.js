@@ -205,7 +205,7 @@ class Landing extends Component {
                     <h3 className="infotitle">Protect against rising energy costs</h3>
                     <br />
                     <p className="pbody">One of the most clear cut benefits of solar panels is the ability to hedge utility prices. In the past ten years, residential electricity prices have gone up by an average of three percent annually. By investing in a solar energy system now, you can fix your electricity rate and protect against unpredictable increases in electricity costs.</p>
-                    <p className="has-text-centered"><a target="_blank" rel="noopener noreferrer" href="https://www.energysage.com/solar/why-go-solar/eliminate-electric-bills/https://www.energysage.com/solar/why-go-solar/reduce-energy-costs/" className="button is-dark">More Info</a></p>
+                    <p className="has-text-centered"><a target="_blank" rel="noopener noreferrer" href="https://www.energysage.com/solar/why-go-solar/reduce-energy-costs/" className="button is-dark">More Info</a></p>
                   </div>
                 </div>
               </div>
