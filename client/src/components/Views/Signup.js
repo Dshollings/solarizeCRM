@@ -18,13 +18,13 @@ class Signup extends Component {
               <div className="hero-body">
                 <div className="container">
                   <div className="has-text-right">
-                    <h1 className="title is-1" >Sign Up</h1> <br />
-                    <p className="title is-3">Become and Affiliate</p>
+                    <h1 className="title is-1">Sign Up</h1> <br />
+                    <p className="title is-3">Become an Affiliate</p>
                   </div>
                 </div>
               </div>
               <div className="hero-footer">
-                <p className="has-text-centered">Solarize Lead Management System©</p>
+                <p className="has-text-centered" id="splendid">Solarize Lead Management System©</p>
               </div>
             </section>  
           </div>
@@ -43,27 +43,27 @@ class Signup extends Component {
                         <img src="../icon.png" alt= "solarize icon" width="128px" />
                       </h1>
                       <div className="login-form">
-                        <form method="POST" action="/signup" class="form-signin">
+                        <form method="POST" action="http://localhost:8080/signup" class="form-signin">
                           <h2 class="form-signin-heading">Create an account</h2>
-                          <label for="inputUsername" class="sr-only">Username</label>
+                          <label for="inputUsername" class="sr-only"></label>
                           <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required autofocus />
                           <br />
-                          <label for="inputPassword" class="sr-only">Password</label>
+                          <label for="inputPassword" class="sr-only"></label>
                           <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required />
                           <br />
-                          <label for="inputPassword" class="sr-only">Repeat Password</label>
+                          <label for="inputPassword" class="sr-only"></label>
                           <input type="password" id="inputPassword2" name="password2" class="form-control" placeholder="Repeat Password" required />
                           <br />
-                          <label for="inputEmail" class="sr-only">Email</label>
+                          <label for="inputEmail" class="sr-only"></label>
                           <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email" required />
                           <br />
-                          <label for="inputPhone" class="sr-only">Phone Number</label>
+                          <label for="inputPhone" class="sr-only"></label>
                           <input type="text" id="inputPhone" name="phone" class="form-control" placeholder="Phone Number" required />
                           <br />
-                          <label for="inputState" class="sr-only">State</label>
+                          <label for="inputState" class="sr-only"></label>
                           <input type="text" id="inputState" name="state" class="form-control" placeholder="State" required />
                           <br />
-                          <label for="inputCompany" class="sr-only">Company Name</label>
+                          <label for="inputCompany" class="sr-only"></label>
                           <input type="text" id="inputCompany" name="company_name" class="form-control" placeholder="Company Name" required />
                           <br />
                           <button class="btn btn-lg btn-primary btn-block" type="submit" onClick={helpers.submitUserForm}>Sign up</button>
@@ -88,4 +88,3 @@ class Signup extends Component {
   }
 }
 export default Signup;
-

@@ -151,9 +151,6 @@ class Landing extends Component {
                 </div>
               </div>
               <a className="button is-outlined" id="showModal" href="https://solarizeinfo.herokuapp.com/leadinfo">
-                <span className="icon">
-                  <i className="fa fa-download"></i> 
-                </span>
                 <span>Request Quote</span>
               </a>
             </div>
